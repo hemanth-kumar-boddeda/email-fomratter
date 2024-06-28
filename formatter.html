@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Formatter - SF Formatter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>SF Formatter</h1>
+    <nav>
+      <ul>
+        <li><a href="formatter.html">Email Formatter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <h2>Email Formatter</h2>
+      <form id="emailForm">
+        <label for="emails">Enter emails line by line or comma-separated:</label><br>
+        <textarea id="emails" name="emails" rows="10" cols="50"></textarea><br>
+        <button type="submit">Format Emails</button>
+      </form>
+      <h2>Formatted Emails:</h2>
+      <div class="output-container">
+        <p id="output" rows="10" cols="50"></p>
+        <button id="copyFormatted" onclick="copyToClipboard('output')">Copy</button>
+      </div>
+      <h2>Email Usernames:</h2>
+      <div class="output-container">
+        <p id="usernames" rows="10" cols="50"></p>
+        <button id="copyUsernames" onclick="copyToClipboard('usernames')">Copy</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 SF Formatter. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
